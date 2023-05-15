@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HLAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video class="video-bg" autoplay muted loop id="myVideo">
+        <source src="img/video/видео без формы.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <header class="header-plug">
+            <section class="header-plug__wrapper">
+                <div class="header-plug__contacts-info-wrapper">
+                    <div class="header-plug__info">
+                        <span>Сайт в разработке</span>
+                    </div>
+                    <div class="header-plug__contacts contacts">
+                        <h2>Контакты</h2>
+                        <ul class="contacts__list">
+                            <li class="contacts__item">
+                                info@hladexpress.ru
+                            </li>
+                            <li class="contacts__item">
+                                8 496 566-50-50
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-plug__desc-logo-wrapper">
+                    <div class="header-plug__logo">
+                        <img src="img/logo.svg" width="307" height="150" alt="Логотип компании.">
+                    </div>
+                    <div class="header-plug__wrapper-title">
+                        <h1>hlad <img src="img/title-logo.svg" width="272" height="35" alt="Экспресс."></h1>
+                        <p>Постоянство перемещения</p>
+                    </div>
+                </div>
+                <div class="header-plug__description">
+                    <span>Перевозки с температурным режимом</span>
+                </div>
+            </section>
+        </header>
+        <main class="main-plug">
+            <section class="main-plug__wrapper">
+                <h2 class="visually-hidden"> Форма обраной связи</h2>
+                <form action="#" method="POST">
+                    <fieldset>Оставить заявку</fieldset>
+                    <div class="main-plug__input-wrapper">
+                        <input type="text" name="name" placeholder="Имя" aria-label="Имя">
+                        <input type="email" name="email" placeholder="E.mail" aria-label="Электронная почта">
+                        <input type="tel" name="tel" placeholder="Телефон" aria-label="Телефон">
+                    </div>
+                    <button type="button" data-open-modal="modal-1">Оставить заявку</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <section class="modal modal--preload" data-modal="modal-1">
+        <div class="modal__wrapper">
+            <div class="modal__overlay" data-close-modal="data-close-modal"></div>
+            <div class="modal__content">
+                <section>
+                    <h2 class="subtitle">example-1</h2>
+                    <p>Ваша заявку успешно отправлена!</p>
+                    <p>Мы свяжемся с вами в ближайшее время</p>
+                </section>
+                <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап"
+                    data-close-modal="data-close-modal" data-focus="data-focus">
+                    Закрыть
+
+                </button>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
