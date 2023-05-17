@@ -1,9 +1,7 @@
 <?php
-    $name = $_POST['name'];
-    $surname = $_POST['surname'];
+    $name = $_POST['name'];    
 	$phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $text = $_POST['text'];
+    $email = $_POST['email'];    
 
 	$to = "itkse89@mail.com"; 
 	$date = date ("d.m.Y"); 
@@ -18,6 +16,5 @@
     Телефон: $phone /n
     Почта: $email /n
     Текст: $text"; 	
-	mail($to, $subject, $msg, "From: $from ");
-
+	mail($to, $subject, $msg, "From: $to");
 ?>
