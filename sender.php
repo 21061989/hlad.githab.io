@@ -11,10 +11,8 @@
 
 	
 	$msg="
-    Имя: $name /n
-    Фамилия: $surname /n
+    Имя: $name /n    
     Телефон: $phone /n
-    Почта: $email /n
-    Текст: $text"; 	
+    Почта: $email"; 	
 	mail($to, $subject, $msg, "From: $to");
 ?>
