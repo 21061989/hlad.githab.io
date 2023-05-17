@@ -479,7 +479,7 @@ img {
     box-sizing: border-box;
 }
 
-.error {
+input.error {
     outline: 2px solid #943b3b;
 }
 
