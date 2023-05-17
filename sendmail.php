@@ -5,15 +5,14 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 
-$mail->SMTPDebug = SMTP::DEBUG_SERVER; 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHtml(true);
 
-$mail->setFrom('https://21061989.github.io/hlad.githab.io/');
+$mail->setFrom('itkse@gmail.com');
 
-$mail->addAddress('sergei-21s@mail.ru');
+$mail->addAddress('grushapark@yandex.ru');
 
 $mail->Subject = 'Заявка с сайта';
 
