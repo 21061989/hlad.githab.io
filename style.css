@@ -169,8 +169,7 @@ img {
 
 @media (max-width: 834px) {
     .header-plug__info span {          
-        font-size: calc( (100vw - 375px)/(834 - 375) * (12 - 8) + 8px);    
-        letter-spacing: 0.415em;           
+        font-size: calc( (100vw - 375px)/(834 - 375) * (12 - 8) + 8px);                    
         padding: 8px 23px;   
     }
 }
@@ -476,7 +475,14 @@ img {
     border: none;
     padding: 14px 20px;    
     color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+._error {
+    outline: 2px solid #943b3b;
+}
+
 
 @media (max-width: 375px) {
     .main-plug__input-wrapper input {
