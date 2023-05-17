@@ -10,7 +10,7 @@ $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHtml(true);
 
-$mail->setFrom('itkse89@gmail.com');
+$mail->setFrom('https://21061989.github.io/hlad.githab.io/');
 
 $mail->addAddress('sergei-21s@mail.ru');
 
